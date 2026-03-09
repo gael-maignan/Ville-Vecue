@@ -179,6 +179,8 @@
 
 <p>Face à ces disparités, la cartographie devient un outil essentiel. Des cartes interactives permettent ainsi de visualiser les stations accessibles, les ascenseurs disponibles ou les itinéraires alternatifs entre métro, bus et tramway. Ces outils facilitent la préparation des déplacements et rendent plus lisible la géographie réelle de la mobilité accessible.</p>
 
+<h2>Accessibilité des gares d'Ile de France (RER et transiliens)</h2>
+
 <div class="iframe-container">
   <div class="iframe-overlay" onclick="loadIframe(this)">
     <span>Cliquer pour charger la carte</span>
@@ -192,6 +194,29 @@
     loading="lazy">
   </iframe>
 </div>
+
+
+
+
+<h2>Accessibilité des bouches de métro</h2>
+
+<div class="iframe-container">
+  <div class="iframe-overlay" onclick="loadIframe(this)">
+    <span>Cliquer pour charger la carte</span>
+  </div>
+
+  <iframe 
+    src="https://data.iledefrance-mobilites.fr/explore/embed/dataset/accessibilite-en-gare/custom/?dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJwaWUiLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6ImFjY2Vzc2liaWxpdHlfbGV2ZWxfaWQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1BY2NlbnQiLCJwb3NpdGlvbiI6ImNlbnRlciJ9XSwieEF4aXMiOiJhY2Nlc3NpYmlsaXR5X2xldmVsX25hbWUiLCJtYXhwb2ludHMiOjUwLCJzb3J0IjoiIiwic2VyaWVzQnJlYWtkb3duIjoiIiwic2VyaWVzQnJlYWtkb3duVGltZXNjYWxlIjoiIiwiY29uZmlnIjp7ImRhdGFzZXQiOiJhY2Nlc3NpYmlsaXRlLWVuLWdhcmUiLCJvcHRpb25zIjp7fX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&static=false&datasetcard=true"
+    width="100%"
+    height="600"
+    frameborder="0"
+    loading="lazy">
+  </iframe>
+</div>
+
+
+
+
 
 <script>
 document.querySelectorAll('.iframe-overlay').forEach(overlay => {
@@ -216,7 +241,7 @@ document.querySelectorAll('.iframe-overlay').forEach(overlay => {
   position: absolute;
   inset: 0;
   background: rgba(0,10,70,0.9);
-  color: white;
+  color: var(--bg);
   display: flex;
   align-items: center;
   justify-content: center;
